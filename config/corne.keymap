@@ -59,12 +59,12 @@
             >;
         };
 
-        layer_4 {
+        app {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans         &trans         &trans         &trans  &trans           &trans  &trans  &trans  &trans  &kp LS(LA(P))  &trans
+&trans  &kp LA(LS(A))  &kp LS(LA(S))  &kp LA(LS(D))  &trans  &trans           &trans  &trans  &trans  &trans  &trans         &trans
+&trans  &trans         &trans         &kp LA(LS(C))  &trans  &kp LS(LA(B))    &trans  &trans  &trans  &trans  &trans         &trans
+                                      &trans         &trans  &trans           &trans  &trans  &trans
             >;
         };
     };
