@@ -52,10 +52,10 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans          &trans  &trans             &trans    &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &kp LEFT_SHIFT  &kp E   &kp R              &kp G     &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans          &trans  &trans             &trans    &trans    &trans    &trans        &trans     &trans  &trans
-                                &trans  &kp RIGHT_COMMAND  &trans    &trans    &trans    &trans
+&trans  &trans  &trans          &trans  &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_SHIFT  &kp E   &kp R              &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans  &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &kp RIGHT_COMMAND  &trans    &trans  &trans  &trans
             >;
         };
 
