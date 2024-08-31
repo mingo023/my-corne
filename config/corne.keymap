@@ -34,19 +34,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp GRAVE  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR          &none       &none                 &kp ASTERISK  &none   &none   &none
-&none  &none      &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION     &kp MINUS   &kp NON_US_BACKSLASH  &trans        &trans  &trans  &trans
-&none  &trans     &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH            &kp ESCAPE  &kp EQUAL             &trans        &trans  &trans  &trans
-                                  &mo 2                 &kp LEFT_ALT           &kp LEFT_COMMAND    &none       &mo 3                 &none
+&none  &kp GRAVE  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR          &none       &none          &kp ASTERISK  &none   &none   &none
+&none  &none      &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION     &kp MINUS   &kp BACKSLASH  &trans        &trans  &trans  &trans
+&none  &trans     &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH            &kp ESCAPE  &kp EQUAL      &trans        &trans  &trans  &trans
+                                  &mo 2                 &kp LEFT_ALT           &kp LEFT_COMMAND    &none       &mo 3          &none
             >;
         };
 
         numedia {
             bindings = <
-&none        &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3       &kp NUMBER_4     &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9          &kp N0  &trans
-&trans       &trans        &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans    &none         &none   &none   &kp LEFT_SHIFT  &trans  &trans
-&bootloader  &trans        &trans          &none              &none            &trans    &none         &none   &none   &none           &trans  &trans
-                                           &trans             &trans           &trans    &trans        &trans  &trans
+&none        &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3       &kp NUMBER_4     &kp N5    &kp NUMBER_6  &kp N7          &kp N8        &kp N9     &kp N0  &trans
+&trans       &trans        &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans    &kp LEFT      &kp DOWN        &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&bootloader  &trans        &trans          &none              &none            &trans    &none         &none           &none         &none      &trans  &trans
+                                           &trans             &trans           &trans    &trans        &kp LEFT_SHIFT  &trans
             >;
         };
 
