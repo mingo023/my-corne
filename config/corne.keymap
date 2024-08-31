@@ -53,7 +53,7 @@
         movement {
             bindings = <
 &trans  &trans  &trans          &kp E   &kp R              &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_SHIFT  &trans  &trans             &kp G     &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &trans  &kp LEFT_SHIFT  &kp S   &trans             &kp G     &kp H   &kp J   &kp K   &kp L   &trans  &trans
 &trans  &trans  &trans          &trans  &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &kp RIGHT_COMMAND  &trans    &trans  &trans  &trans
             >;
