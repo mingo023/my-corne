@@ -34,7 +34,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp GRAVE  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR         &kp CARET   &kp MINUS  &kp ASTERISK   &kp BACKSLASH     &none         &none
+&none  &kp GRAVE  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR         &kp CARET   &kp MINUS  &kp ASTERISK   &kp BACKSLASH     &kp PERCENT   &none
 &none  &none      &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp LEFT    &kp DOWN   &kp UP_ARROW   &kp RIGHT         &kp COLON     &kp DOUBLE_QUOTES
 &none  &trans     &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH           &kp ESCAPE  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
                                   &kp LEFT_ALT          &trans                 &mo 2              &trans      &mo 3      &none
@@ -46,7 +46,7 @@
 &none        &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6      &kp N7             &kp N8        &kp N9     &kp N0  &trans
 &trans       &trans        &kp LEFT_SHIFT  &kp LEFT_ALT  &trans        &trans    &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &bootloader  &trans        &trans          &none         &none         &trans    &none             &kp C_VOLUME_DOWN  &kp C_VOL_UP  &none      &trans  &trans
-                                           &trans        &trans        &trans    &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans
+                                           &trans        &trans        &trans    &kp LEFT_CONTROL  &kp LEFT_SHIFT     &kp LC(A)
             >;
         };
 
