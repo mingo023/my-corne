@@ -48,7 +48,7 @@
 &none  &kp GRAVE  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR         &kp CARET   &kp MINUS  &kp ASTERISK   &kp BACKSLASH     &kp PERCENT   &none
 &none  &none      &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp LEFT    &kp DOWN   &kp UP_ARROW   &kp RIGHT         &kp COLON     &kp DOUBLE_QUOTES
 &none  &trans     &kp AT_SIGN     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH           &kp ESCAPE  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
-                                  &kp LEFT_ALT          &trans                 &mo 2              &trans      &mo 4      &none
+                                  &kp LEFT_ALT          &trans                 &mo 2              &trans      &mo 3      &none
             >;
         };
 
@@ -58,15 +58,6 @@
 &trans       &trans        &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &bootloader  &trans        &trans          &none         &none             &trans    &none             &kp C_VOLUME_DOWN  &kp C_VOL_UP  &none      &trans  &trans
                                            &trans        &trans            &trans    &kp LEFT_CONTROL  &kp LEFT_SHIFT     &kp LC(A)
-            >;
-        };
-
-        movement {
-            bindings = <
-&trans  &trans  &trans  &kp E   &kp R              &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp S   &none   &trans             &kp G     &kp H   &kp J   &kp K   &kp L   &trans  &trans
-&trans  &trans  &trans  &trans  &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp RIGHT_COMMAND  &mo 4     &trans  &trans  &trans
             >;
         };
 
