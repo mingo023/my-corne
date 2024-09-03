@@ -9,13 +9,22 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
+        taphold: taphold {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&mo>, <&mo>;
+            label = "TAPHOLD";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <600>;
+            tapping-term-ms = <800>;
+        };
+    };
+
+    macros {
+        tmux1: tmux1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_1>;
+            label = "TMUX1";
         };
     };
 
@@ -30,10 +39,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R             &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
-&mo 1      &kp A  &kp S  &kp D             &kp F             &kp G        &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V             &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LG(SPACE)
-                         &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 3
+&kp TAB    &kp Q  &kp W  &kp E             &kp R                                &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&mo 1      &kp A  &kp S  &kp D             &kp F                                &kp G        &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp V                                &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LG(SPACE)
+                         &kp LEFT_CONTROL  &taphold RIGHT_COMMAND LEFT_COMMAND  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 3
             >;
         };
 
@@ -48,7 +57,7 @@
 &none  &kp GRAVE  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR         &kp CARET   &kp MINUS  &kp ASTERISK   &kp BACKSLASH     &kp PERCENT   &none
 &none  &none      &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp LEFT    &kp DOWN   &kp UP_ARROW   &kp RIGHT         &kp COLON     &kp DOUBLE_QUOTES
 &none  &trans     &kp AT_SIGN     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH           &kp ESCAPE  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
-                                  &kp LEFT_ALT          &trans                 &mo 2              &trans      &trans     &none
+                                  &kp LEFT_ALT          &trans                 &mo 2              &trans      &trans     &mo 4
             >;
         };
 
@@ -57,7 +66,7 @@
 &none        &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4      &kp N5    &kp NUMBER_6      &kp N7             &kp N8        &kp N9     &kp N0  &trans
 &trans       &trans        &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &bootloader  &trans        &trans          &none         &none             &trans    &none             &kp C_VOLUME_DOWN  &kp C_VOL_UP  &none      &trans  &trans
-                                           &trans        &trans            &trans    &kp LEFT_CONTROL  &kp LEFT_SHIFT     &kp LC(A)
+                                           &trans        &trans            &trans    &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans
             >;
         };
 
@@ -67,6 +76,15 @@
 &trans  &kp LA(LS(A))  &kp LS(LA(S))  &kp LA(LS(D))  &trans  &trans           &trans  &trans  &trans  &trans  &trans         &trans
 &trans  &trans         &trans         &kp LA(LS(C))  &trans  &kp LS(LA(B))    &trans  &trans  &trans  &trans  &trans         &trans
                                       &trans         &trans  &trans           &trans  &trans  &trans
+            >;
+        };
+
+        tmux {
+            bindings = <
+&trans  &tmux1  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
