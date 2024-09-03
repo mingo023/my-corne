@@ -48,7 +48,7 @@
 &none  &kp GRAVE  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR         &kp CARET   &kp MINUS  &kp ASTERISK   &kp BACKSLASH     &kp PERCENT   &none
 &none  &none      &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp LEFT    &kp DOWN   &kp UP_ARROW   &kp RIGHT         &kp COLON     &kp DOUBLE_QUOTES
 &none  &trans     &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH           &kp ESCAPE  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
-                                  &kp LEFT_ALT          &trans                 &mo 2              &trans      &mo 3      &none
+                                  &kp LEFT_ALT          &trans                 &mo 2              &trans      &mo 4      &none
             >;
         };
 
