@@ -30,10 +30,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R             &kp T        &kp Y          &kp U      &kp I              &kp O    &kp P     &kp MINUS
-&mo 1      &kp A  &kp S  &kp D             &kp F             &kp G        &kp H          &kp J      &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V             &kp B        &kp N          &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp LG(SPACE)
-                         &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE    &kp BACKSPACE  &kp ENTER  &new_behavior 3 4
+&kp TAB    &kp Q  &kp W  &kp E             &kp R             &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&mo 1      &kp A  &kp S  &kp D             &kp F             &kp G        &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp V             &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LG(SPACE)
+                         &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 3
             >;
         };
 
@@ -66,7 +66,7 @@
 &trans  &trans  &trans  &kp E   &kp R              &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp S   &none   &trans             &kp G     &kp H   &kp J   &kp K   &kp L   &trans  &trans
 &trans  &trans  &trans  &trans  &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp RIGHT_COMMAND  &trans    &trans  &trans  &trans
+                        &trans  &kp RIGHT_COMMAND  &mo 4     &trans  &trans  &trans
             >;
         };
 
