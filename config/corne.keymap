@@ -9,39 +9,18 @@
 
 / {
     behaviors {
-        taphold: taphold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <800>;
-        };
-
-        tap_dance: tap_dance {
+        tap_dance_cmd: tap_dance_cmd {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE";
+            label = "TAP_DANCE_CMD";
             #binding-cells = <0>;
             bindings = <&kp LEFT_COMMAND>, <&kp RIGHT_COMMAND>;
         };
 
-        lcmd_rcmd: lcmd_rcmd {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LCMD_RCMD";
-            bindings = <&kp LEFT_COMMAND>, <&kp RIGHT_GUI>;
-
+        tap_dance_ctrl: tap_dance_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_CTRL";
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
-        space_or_num: space_or_num {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_OR_NUM";
-            bindings = <&kp SPACE>, <&mo 2>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            bindings = <&kp LCTRL>, <&kp LEFT_ALT>;
         };
     };
 
@@ -65,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R       &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
-&mo 1      &kp A  &kp S  &kp D             &kp F       &kp G        &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V       &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LG(SPACE)
-                         &kp LEFT_CONTROL  &tap_dance  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 3
+&kp TAB    &kp Q  &kp W  &kp E            &kp R           &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&mo 1      &kp A  &kp S  &kp D            &kp F           &kp G        &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C            &kp V           &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LG(SPACE)
+                         &tap_dance_ctrl  &tap_dance_cmd  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 3
             >;
         };
 
