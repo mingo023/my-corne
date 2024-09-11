@@ -55,10 +55,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E            &kp R           &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&kp TAB    &kp Q  &kp W  &kp E            &kp R           &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &mo 3
 &mo 1      &kp A  &kp S  &kp D            &kp F           &kp G        &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C            &kp V           &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LG(SPACE)
-                         &tap_dance_ctrl  &tap_dance_cmd  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 3
+                         &tap_dance_ctrl  &tap_dance_cmd  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 2
             >;
         };
 
@@ -73,7 +73,7 @@
 &none  &kp GRAVE  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR         &kp CARET   &kp MINUS  &kp ASTERISK  &kp BACKSLASH  &kp PERCENT  &none
 &none  &none      &kp LEFT_SHIFT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp LEFT    &kp DOWN   &kp UP_ARROW  &kp RIGHT      &kp AT_SIGN  &trans
 &none  &trans     &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH           &kp ESCAPE  &kp EQUAL  &trans        &trans         &trans       &trans
-                                  &kp LEFT_ALT          &trans                 &mo 2              &trans      &trans     &mo 4
+                                  &kp LEFT_ALT          &trans                 &trans             &trans      &trans     &trans
             >;
         };
 
@@ -92,15 +92,6 @@
 &trans  &kp LA(LS(A))  &kp LS(LA(S))  &kp LA(LS(D))  &trans  &trans           &trans  &trans  &trans  &trans  &trans         &trans
 &trans  &trans         &trans         &kp LA(LS(C))  &trans  &kp LS(LA(B))    &trans  &trans  &trans  &trans  &trans         &trans
                                       &trans         &trans  &trans           &trans  &trans  &trans
-            >;
-        };
-
-        tmux {
-            bindings = <
-&trans  &tmux1  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
