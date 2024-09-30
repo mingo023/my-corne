@@ -87,12 +87,12 @@
             >;
         };
 
-        app {
+        app_utils {
             bindings = <
-&trans      &trans         &trans         &trans         &trans  &trans           &trans  &trans  &trans  &trans  &kp LS(LA(P))  &trans
-&trans      &kp LA(LS(A))  &kp LS(LA(S))  &kp LA(LS(D))  &trans  &trans           &trans  &trans  &trans  &trans  &trans         &trans
-&bt BT_CLR  &trans         &trans         &kp LA(LS(C))  &trans  &kp LS(LA(B))    &trans  &trans  &trans  &trans  &trans         &trans
-                                          &trans         &trans  &trans           &trans  &trans  &trans
+&trans      &trans         &trans         &trans         &trans  &trans           &trans         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &kp LS(LA(P))  &trans
+&trans      &kp LA(LS(A))  &kp LS(LA(S))  &kp LA(LS(D))  &trans  &trans           &trans         &kp C_VOL_DN          &kp C_VOLUME_UP       &trans  &trans         &trans
+&bt BT_CLR  &trans         &trans         &kp LA(LS(C))  &trans  &kp LS(LA(B))    &kp LA(LS(N))  &trans                &trans                &trans  &trans         &trans
+                                          &trans         &trans  &trans           &trans         &trans                &trans
             >;
         };
     };
