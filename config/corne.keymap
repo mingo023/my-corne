@@ -25,14 +25,12 @@
             bindings = <&kp LCTRL>, <&kp LEFT_ALT>;
         };
 
-        kp_kp: kp_kp {
+        layer1_or_caplock: layer1_or_caplock {
             compatible = "zmk,behavior-hold-tap";
-            label = "KP_KP";
-            bindings = <&kp>, <&kp>;
+            label = "LAYER1_OR_CAPLOCK";
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
-            quick-tap-ms = <180>;
             tapping-term-ms = <100>;
         };
     };
@@ -57,10 +55,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E            &kp R           &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &mo 3
-&mo 1      &kp A  &kp S  &kp D            &kp F           &kp G        &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C            &kp V           &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LG(SPACE)
-                         &tap_dance_ctrl  &tap_dance_cmd  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 2
+&kp TAB                        &kp Q  &kp W  &kp E            &kp R           &kp T        &kp Y          &kp U      &kp I      &kp O    &kp P     &mo 3
+&layer1_or_caplock 1 CAPSLOCK  &kp A  &kp S  &kp D            &kp F           &kp G        &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT                      &kp Z  &kp X  &kp C            &kp V           &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LG(SPACE)
+                                             &tap_dance_ctrl  &tap_dance_cmd  &kp SPACE    &kp BACKSPACE  &kp ENTER  &mo 2
             >;
         };
 
